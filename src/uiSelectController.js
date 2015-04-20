@@ -403,6 +403,11 @@ uis.controller('uiSelectCtrl',
     //   ctrl.close();
     // }
 
+    if (key === KEY.ENTER) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
     $scope.$apply(function() {
 
       var tagged = false;
